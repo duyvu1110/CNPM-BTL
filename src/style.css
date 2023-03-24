@@ -1,12 +1,15 @@
-*{
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    
+*{padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 body{
+  
     height: 100vh;
-    background: linear-gradient(135deg, #8052ec,#d161ff );
+    /* background: linear-gradient(135deg, #8052ec,#d161ff ); */
+    background-color: bisque;
 }
 html{
     font-size: 16px;
@@ -28,3 +31,108 @@ html{
       transform: translateY(-20px);
     }
   }
+
+  .match_id{
+    display:flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+.match-in4{
+  display: grid;
+  width: 100%;
+  height: 80px;
+  /* background-color: aqua; */
+  grid-template-columns: 4fr 0.5fr 1fr 0.5fr 4fr;
+  gap: 5px;
+  font-weight: 600;
+}
+
+
+.team1-in4{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-self: flex-end;
+  text-align: center;
+  padding-right: 10px;
+}
+.img1{
+  width: 100%;
+  height: 100%;
+  background-image: url(https://i.pinimg.com/736x/37/19/78/371978fdfd132f52053d1c90f55f4215.jpg);
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.img2{
+  width: 100%;
+  height: 100%;
+  background-image: url(https://i.pinimg.com/originals/a2/2d/1d/a22d1d8a789a904187dba0f5240a5907.png);
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.scored{
+  justify-self: center;
+  font-size: 36px;
+  align-self: center;
+  font-weight: 100;
+  padding: 10px;
+  border: 2px black solid;
+}
+
+.team2-in4{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-self: flex-start;
+  text-align: center;
+}
+.team1_id {
+  align-self: flex-end;
+}
+.team2_id{
+  align-self: flex-end;
+}
+.time-left{
+  align-self: flex-end;
+}
+
+.turn{
+  display:flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: red;
+    transform: translate3d(0,0,0);
+}
+
+
+
+.turn > span {
+  animation: flipping 2s infinite;
+}
+
+.turn > span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.turn > span:nth-child(2) {
+  animation-delay: 0.4s;
+  padding-right: 10px;
+}
+
+.turn > span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes flipping {
+  0%, 80% {
+    transform: rotateY(360deg);
+  }
+}
