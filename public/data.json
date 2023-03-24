@@ -1,0 +1,18 @@
+{
+  "match_id": "123456",
+  "status": "None",
+  "size": 4,
+  "board": [
+    ["X", "O", "X",""],
+    ["O", "X", "",""],
+    ["", "", "X",""],
+    ["","O","",""]
+  ],
+  "time1": 80,
+  "time2": 60,
+  "team1_id": "teamA",
+  "team2_id": "teamB",
+  "turn": "Team1",
+  "score1": 2,
+  "score2": 1
+}
